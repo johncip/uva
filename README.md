@@ -19,7 +19,7 @@ Often the problems allow you to make simplifying assumptions about the input, an
 "DACU" is a measure of problem difficulty used on [uHunt](http://uhunt.felix-halim.net). It is the number of distinct users with an accepted solution for a particular problem. I have mostly been solving the problems in order of DACU. Thus far they've mostly been "ad hoc" problems, with a couple featuring very simple examples of graph searching, state machines, or general recursion skills.
 
 ### Building
-Submitted solutions must be in a public class called Main, in the default package. Rather than rename my classes, I just remove them from the build path. This means that only one solution folder can be on the build path at a time. Util can always be on the build path.
+Java solutions submitted to UVa Online Judge must be in a public class called Main, and in the default package. Rather than rename my classes, I just remove them from the build path. This means that only one solution folder can be on the build path at a time. Util can always be on the build path.
 
 ### Misc
 "The Blocks Problem" and maybe one or two others, used a stack implementation which was not generic and which I later removed in favor of a generic one as later problems called for stacks of things other than ints.
