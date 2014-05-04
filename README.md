@@ -1,7 +1,7 @@
 uva
 ===
 
-My solutions to ACM contest problems. I competed in my area's ACM regionals twice while I was an undergrad. We didn't win either time but neither were we among the worst. I've since graduated, but I'd like to spend some time getting better at these problems since I think they're pretty fun.
+My solutions to ACM contest problems. I competed in my area's ACM regionals twice while I was an undergrad. I'd like to spend some time getting better at these problems since I think they're pretty fun.
 
 This is not the only repository of such solutions, nor is it the most complete. I'm doing these for myself. However, I've tried to keep the code organized and well-documented. If you are looking for a solution to a problem you haven't solved yet, I would advise you to look [here](http://uvatoolkit.com/problemssolve.php) or in the Online Judge forums first for a strategy hint rather than a full solution.
 
