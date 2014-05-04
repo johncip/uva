@@ -13,8 +13,13 @@ The fastest way I've found to do output is to keep everything in memory and dump
 ### Code Quality
 In all cases I've tried to keep methods compact, obvious, and well-documented. However, these are not intended to be exercises in software engineering. For instance, I've kept a pretty high tolerance for global state -- for most of these problems the only data structure is an array or two, so making extra references to it would at best be busywork and at worst obscure the solution. However, I've been more disciplined (by introducing new classes and occasionally unit tests) where I thought it was warranted.
 
+Often the problems allow you to make simplifying assumptions about the input, and I implicitly assume these as they're already stated in the problem description. Other assumptions I've tended to assert rather than guard against violations.
+
 ### DACU
 "DACU" means accepted for distinct user and is a way of measuring problem difficulty on uHunt. I have mostly been solving the problems in order of DACU.
 
 ### Building
 Submitted solutions must be in a public class called Main, in the default package. Rather than rename my classes, I just remove them from the build path. This means that only one solution folder can be on the build path at a time. Util can always be on the build path.
+
+### Misc
+"The Blocks Problem" and maybe one or two others, used a stack implementation which was not generic and which I later removed in favor of a generic one as later problems called for stacks of things other than ints.
