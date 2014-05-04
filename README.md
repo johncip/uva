@@ -1,12 +1,18 @@
 uva
 ===
 
-My solutions to ACM contest problems. This is not the only repository of such solutions, nor is it most complete. I'm doing these for myself. However, I've tried to keep the code organized and well-documented.
+My solutions to ACM contest problems. I competed in my area's ACM regionals twice while I was an undergrad. We didn't win either time but neither were we among the worst. Now that I've graduated I'd like to spend some time getting better at these problems since I think they're pretty fun.
+
+This is not the only repository of such solutions, nor is it the most complete. I'm doing these for myself. However, I've tried to keep the code organized and well-documented. If you are looking for a solution to a problem you haven't solved yet, I would advise you to look [here](http://uvatoolkit.com/problemssolve.php) or in the Online Judge forums first for a strategy hint rather than a full solution.
+
+Often a larger input/output set is enough. In my opinion the problems which force one to guess what to do with edge cases, or purposely introduce red herrings, are perhaps good puzzles but not good *programming challenges*.
 
 ### I/O
-Most of the problems have a list of integers as input, and Scanner is the simplest way to read them. However, some problems require reading millions of inputs very quickly, and in those cases faster methods like DataInputStream.readLine() (deprecated) or BufferedReader.readLine() are required for staying under the time limit. Some of my solutions use DataInputStreams, and I haven't bothered to update those to BufferedReaders, but I expect the performance to be similar.
+Most of the problems have a list of integers as input, and in Java, Scanner is the simplest way to read them. However, some problems require reading millions of inputs very quickly, and in those cases faster methods like DataInputStream.readLine() (deprecated) or BufferedReader.readLine() are required for staying under the time limit. Some of my solutions use DataInputStreams, and I haven't bothered to update those to BufferedReaders, but I expect the performance to be similar.
 
 If there's an even faster way that's also reasonably simple, I'd love to hear it. My brief experiments with "slurping" the input didn't outperform processing it line by line.
+
+I'd also love to know how people are solving problems in 0 seconds -- metaprogramming perhaps?
 
 AFAIK the fastest way to do output is to keep it in memory until the end and then dump it to the console at once using a BufferedOutputStream. I tend to do this even for problems which don't technically require it.
 
