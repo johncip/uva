@@ -4,7 +4,7 @@
 
 // TODO: iterator with resizing array
 
-public class Primes {
+class Primes {
 
     /**
      * Returns an array of the first n primes by checking candidates for
@@ -31,12 +31,13 @@ public class Primes {
 
     /**
      * Returns a boolean array of primality for numbers up to n.
+     * 
+     * Can we stop at sqrt(n) in the inner loop?
      */
     static boolean[] sieve(int n) {
         boolean[] primes = new boolean[n];
         if (n < 3)
             return primes;
-        
 
         // init with 2 and all odds >= 3 : true
         primes[2] = true;
@@ -48,7 +49,7 @@ public class Primes {
         for (int i = 3; i < n; i += 2) {
             if (primes[i] == false)
                 continue;
-            
+
             for (int j = 2; i * j < n; j++)
                 primes[i * j] = false;
         }
