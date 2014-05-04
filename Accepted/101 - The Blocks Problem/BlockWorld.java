@@ -4,25 +4,24 @@
 
 class BlockWorld {
     
-    Stack<Integer>[] stacks;
-    Stack<Integer> tmp;
+    Stack[] stacks;
+    Stack tmp;
     int N;
 
     /**
      * Sets up the stacks.
      */
-    @SuppressWarnings("unchecked")
     public BlockWorld(int n) {
         N = n;
         assert N > 0;
 
         stacks = new Stack[N];
         for (int i = 0; i < N; i++) {
-            stacks[i] = new Stack<Integer>(N);
+            stacks[i] = new Stack(N);
             stacks[i].push(i);
         }
 
-        tmp = new Stack<Integer>(N);
+        tmp = new Stack(N);
         assert tmp.isEmpty();
     }
 
@@ -56,8 +55,8 @@ class BlockWorld {
      * are also returned first.
      */
     void move(int a, int b, boolean onto) {
-        Stack<Integer> src = stackWith(a);
-        Stack<Integer> dest = stackWith(b);
+        Stack src = stackWith(a);
+        Stack dest = stackWith(b);
 
         if (src == dest)
             return;
@@ -76,8 +75,8 @@ class BlockWorld {
      * returned first.
      */
     void pile(int a, int b, boolean onto) {
-        Stack<Integer> src = stackWith(a);
-        Stack<Integer> dest = stackWith(b);
+        Stack src = stackWith(a);
+        Stack dest = stackWith(b);
 
         if (src == dest)
             return;
@@ -105,13 +104,13 @@ class BlockWorld {
     /**
      * Returns the stack containing x.
      */
-    Stack<Integer> stackWith(int x) {
+    Stack stackWith(int x) {
         assert x < N;
         assert x >= 0;
 
         // x is now guaranteed to be in one of the stacks
 
-        for (Stack<Integer> s : stacks)
+        for (Stack s : stacks)
             if (s.contains(x))
                 return s;
 
@@ -122,7 +121,7 @@ class BlockWorld {
     /**
      * Returns blocks sitting on block x (if any) to their homes.
      */
-    void returnOver(Stack<Integer> stack, int x) {
+    void returnOver(Stack stack, int x) {
         assert (stack.contains(x));
 
         while (true)

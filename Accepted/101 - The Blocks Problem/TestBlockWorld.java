@@ -16,7 +16,7 @@ public class TestBlockWorld extends BlockWorld {
     
     @Test
     public void testInitialState() {
-        for (Integer i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++) {
             assertFalse(stacks[i].isEmpty());
             assertEquals(stacks[i].size(), 1);
             assertEquals(stacks[i].peek(), i);
@@ -25,21 +25,21 @@ public class TestBlockWorld extends BlockWorld {
 
     @Test
     public void testReturnUntil() {
-        Stack<Integer>[] ss = stacks;
-        Stack<Integer> dest = ss[9];
+        Stack[] ss = stacks;
+        Stack dest = ss[9];
 
         dest.push(ss[0].pop());
         dest.push(ss[1].pop());
         assertEquals(dest.size(), 3);
-        assertEquals(dest.peek(), Integer.valueOf(1));
+        assertEquals(dest.peek(), 1);
         returnOver(dest, 9);
         testInitialState();
     }
 
     @Test
     public void testReturnBlock() {
-        Stack<Integer>[] ss = stacks;
-        Stack<Integer> dest = ss[9];
+        Stack[] ss = stacks;
+        Stack dest = ss[9];
 
         dest.push(ss[0].pop());
         returnBlock(dest.pop());
@@ -48,8 +48,8 @@ public class TestBlockWorld extends BlockWorld {
 
     @Test
     public void testState() {
-        Stack<Integer>[] ss = stacks;
-        Stack<Integer> dest = ss[9];
+        Stack[] ss = stacks;
+        Stack dest = ss[9];
 
         dest.push(ss[0].pop());
         dest.push(ss[1].pop());
@@ -59,8 +59,8 @@ public class TestBlockWorld extends BlockWorld {
 
     @Test
     public void testIntStackWith() {
-        Stack<Integer>[] ss = stacks;
-        Stack<Integer> dest = ss[9];
+        Stack[] ss = stacks;
+        Stack dest = ss[9];
 
         dest.push(ss[0].pop());
         dest.push(ss[1].pop());
@@ -79,15 +79,15 @@ public class TestBlockWorld extends BlockWorld {
     }
 
     public void testMove() {
-        Stack<Integer>[] ss = stacks;
-        Stack<Integer> src = ss[0];
-        Stack<Integer> dest = ss[1];
+        Stack[] ss = stacks;
+        Stack src = ss[0];
+        Stack dest = ss[1];
 
         move(0, 1, true);
 
         assertTrue(src.isEmpty());
         assertEquals(2, dest.size());
-        assertEquals(Integer.valueOf(0), dest.peek());
+        assertEquals(0, dest.peek());
     }
 
 }
