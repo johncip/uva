@@ -16,7 +16,7 @@ In all cases I've tried to keep methods compact, obvious, and well-documented. H
 Often the problems allow you to make simplifying assumptions about the input, and I implicitly assume these as they're already stated in the problem description. Special assumptions I've tended to assert explicitly (as opposed to guarding against violations).
 
 ### DACU
-"DACU" means accepted for distinct user and is a way of measuring problem difficulty on uHunt. I have mostly been solving the problems in order of DACU.
+"DACU" is a measure of problem difficulty used on [uHunt](http://uhunt.felix-halim.net). It is the number of distinct users with an accepted solution for a particular problem. I have mostly been solving the problems in order of DACU. Thus far they've mostly been "ad hoc" problems, with a couple featuring very simple examples of graph searching, state machines, or general recursion skills.
 
 ### Building
 Submitted solutions must be in a public class called Main, in the default package. Rather than rename my classes, I just remove them from the build path. This means that only one solution folder can be on the build path at a time. Util can always be on the build path.
