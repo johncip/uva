@@ -28,4 +28,4 @@ Often the problems allow you to make simplifying assumptions about the input, an
 Java solutions submitted to UVa Online Judge must be in a public class called Main, and in the default package. Rather than rename my classes, I just remove them from the build path. This means that only one solution folder can be on the build path at a time. Util can always be on the build path.
 
 ### Misc
-"The Blocks Problem" (and I think at least one other) used a stack implementation that wasn't generic and which I later removed in favor of a generic one as later problems called for stacks of things other than ints.
+My solution to *The Blocks Problem* (and possibly one other) used a stack implementation that wasn't generic and which I later ripped out in favor of a generic one.
