@@ -56,14 +56,35 @@ class Util {
     }
 
     /**
-     * Returns pow(a,b) mod m
+     * Returns pow(b,p) mod m.
+     * 
+     * Fallback for when squaring the base might overflow.
      */
-    static int modPow(int a, int b, int m) {
+    static int modPow2(int b, int p, int m) {
+        b = b % m;
         int res = 1;
 
-        for (int i = 0; i < b; i++)
-            res = (res * a) % m;
+        for (int i = 0; i < p; i++)
+            res = (res * b) % m;
 
+        return res;
+    }
+
+    /**
+     * Returns pow(b,p) mod m.
+     * 
+     * Squares base rather than multiplying.
+     */
+    static int modPow(int b, int p, int m) {
+        b = b % m;
+        int res = 1;
+
+        while (p > 0) {
+            if (p % 2 == 1)
+                res = (res * b) % m;
+            p /= 2;
+            b = b * b % m;
+        }
         return res;
     }
 }
