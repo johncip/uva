@@ -1,9 +1,6 @@
-/*
+/**
  * Utilities for generating prime numbers.
  */
-
-// TODO: iterator with resizing array
-
 class Primes {
 
     /**
