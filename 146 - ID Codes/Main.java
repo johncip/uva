@@ -7,7 +7,7 @@
  * Thus for a one-character string, L is empty and R is length one.
  *
  * Changing R means (1) swapping its leftmost char for the next largest one
- * and (2) reversing everything that follows (following the swap it will still
+ * and (2) reversing everything that follows (after the swap it will still
  * be in non-increasing order).
  * 
  * If R's leftmost char is its largest (also implying that L is empty), then
