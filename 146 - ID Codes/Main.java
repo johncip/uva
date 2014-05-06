@@ -1,10 +1,10 @@
 /*
  * 146 - ID Codes
  * 
- * Consider the string as L+R: L is sorted and won't change, R, is in reverse
- * order except possibly for its leftmost char, and needs to change.
+ * Consider the string as L+R: L is sorted and won't change, R is in reverse
+ * order except possibly for its leftmost char, and will change.
  * 
- * e.g. for a one char string, L is empty and R is length one.
+ * Thus for a one-character string, L is empty and R is length one.
  *
  * Changing R means (1) swapping its leftmost char for the next largest one
  * and (2) reversing everything that follows (following the swap it will still
@@ -55,21 +55,31 @@ public class Main {
      * Returns true if the array was modified.
      */
     static boolean next(char[] arr) {
-        for (int i = arr.length - 1; i > 0; i--) {
-            if (arr[i - 1] >= arr[i])
+        // i is the first character of the subarray we intend to change
+        // everything following it is in non-increasing order
+        for (int i = arr.length - 2; i >= 0; i--) {
+            if (arr[i] >= arr[i + 1])
                 continue;
             else {
-
-                int j = arr.length - 1;
-                while (arr[j] <= arr[i - 1])
-                    j--;
-                swap(arr, i - 1, j);
-                reverse(arr, i);
+                int j = larger(arr, arr[i]);
+                swap(arr, i, j);
+                reverse(arr, i + 1);
                 return true;
             }
         }
 
         return false;
+    }
+
+    /**
+     * Returns the first character seen that is larger than a given value,
+     * searching from the right.
+     */
+    private static int larger(char[] arr, char val) {
+        int j = arr.length - 1;
+        while (arr[j] <= val)
+            j--;
+        return j;
     }
 
     /**
