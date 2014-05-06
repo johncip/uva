@@ -87,4 +87,16 @@ class Util {
         }
         return res;
     }
+    
+    /**
+     * Prints the first N elements of an int array.
+     */
+    static void say(int[] arr, int n) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            sb.append(arr[i]);
+            sb.append(' ');
+        }
+        System.out.println(sb);
+    }
 }
