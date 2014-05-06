@@ -21,9 +21,8 @@ class Util {
     /**
      * Swaps values at two array indices.
      */
-    @SuppressWarnings("rawtypes")
-    public static void swap(Comparable[] A, int i, int j) {
-        Comparable tmp = A[i];
+    public static void swap(Object[] A, int i, int j) {
+        Object tmp = A[i];
         A[i] = A[j];
         A[j] = tmp;
     }
