@@ -86,7 +86,7 @@ class Util {
         }
         return res;
     }
-    
+
     /**
      * Prints the first N elements of an int array.
      */
@@ -97,5 +97,30 @@ class Util {
             sb.append(' ');
         }
         System.out.println(sb);
+    }
+
+    /**
+     * Insertion sorts array a using the values in b.
+     */
+    public static void sortUsing(int[] a, int[] b) {
+        assert a.length == b.length;
+
+        int[] c = new int[b.length];
+        System.arraycopy(b, 0, c, 0, b.length);
+
+        for (int i = 0; i < c.length; i++)
+            for (int j = i; j > 0 && c[j] > c[j - 1]; j -= 1) {
+                swap(a, j, j - 1);
+                swap(c, j, j - 1);
+            }
+    }
+
+    /**
+     * Swaps array values at the given indices.
+     */
+    public static void swap(int[] arr, int i, int j) {
+        int tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
     }
 }
