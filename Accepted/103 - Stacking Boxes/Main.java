@@ -3,13 +3,10 @@
  * 
  * Print the longest chain of n-dimensional boxes that fit inside one another.
  * 
- * (Sort dimensions, sort boxes, create "contains" tree bottom-up where child
- * with longest path is connected.)
+ * (Sort dimensions, sort boxes, create a "contains" tree bottom-up where the
+ * child with the longest path is preferred over the others.)
  * 
- * Learned later: this is called longest common subsequence.
- * Mistakes: I had it so boxes with the same dimensions fit in one another; they don't.
- * 
- * To submit: cat Main, Box, Util. Only Main should be public.
+ * To submit, include Box and Util.
  */
 
 import java.util.Scanner;

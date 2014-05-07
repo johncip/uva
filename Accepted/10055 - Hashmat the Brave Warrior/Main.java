@@ -1,5 +1,7 @@
 /*
  * 10055 - Hashmat the Brave Warrior
+ * 
+ * Use long integers.
  */
 
 import java.util.Scanner;

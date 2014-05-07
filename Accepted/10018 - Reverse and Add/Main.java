@@ -1,5 +1,8 @@
 /*
  * 10018 - Reverse and Add
+ * 
+ * We could use an arithmetic solution to check for palindromes, but String
+ * conversions still keep us under the time limit.
  */
 
 import java.util.Scanner;

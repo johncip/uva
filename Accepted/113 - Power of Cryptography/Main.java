@@ -3,20 +3,13 @@
  * 
  * Find the nth root of p, with the guarantee that the root will be an integer.
  * 
- * Most other solutions use floating point. This doesn't seem to me to be the
- * right answer what about numbers that aren't represented by a double (like
- * 2^53 + 1)?
+ * Most other solutions use floating point. This doesn't strike me as correct
+ * right answer--what about numbers that aren't representable with a double
+ * (e.g. 2^53 + 1)?
  * 
- * Instead, we use bignums and do a binary search for the root. Search space is
- * between 0 and 2^31 - 1, which is enough to pass the judge.
+ * Here, we use bignums and do a binary search for the root. Search space is
+ * between 0 and 2^31 - 1, but it's still fast enough to pass the judge.
  * 
- * Note: My first attempt was based on the idea that we could get away with
- * using mod_pow to only check as many of the right-most digits as would fit
- * into an int. My assumption was that this was enough to avoid most collisions
- * and you could be reasonably sure you'd found the root.
- * 
- * It's not, and the worst case is powers of 10, since you're only ever looking
- * at a bunch of zeroes.
  */
 
 import java.io.BufferedOutputStream;

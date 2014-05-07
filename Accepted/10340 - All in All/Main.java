@@ -2,8 +2,8 @@
  * 10340 - All in All
  * 
  * Keep an index on the plaintext and look at each character in the
- * ciphertext, incrementing the index when the current character matches the
- * indexed one.
+ * ciphertext, incrementing the PT index when the current CT char matches the
+ * indexed PT char.
  */
 
 import java.util.Scanner;

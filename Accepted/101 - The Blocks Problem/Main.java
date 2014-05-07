@@ -4,12 +4,15 @@
  * Create an array of stacks and manage their state.
  * 
  * This problem can be done by simulating the stacks in a 2D array, which is
- * how I solved it while in school. However, a "real" stack ADT is easy to
- * write, and using it the commands given reduce to a few push and pop
- * operations. The code for this solution is much more readable, I think,
- * and more amenable to unit testing. 
+ * how I solved it as an undergrad. However, a stack ADT is easy to write,
+ * and using it the commands given reduce to a few push and pop operations.
+ * The code for this solution is much more readable, I think, and more amenable
+ * to unit testing.
  * 
- * To submit: include BlockWorld.java and Util/Stack.java.
+ * Doesn't look like we have to deal with recursive block returns.
+ * 
+ * Note: submission requires a non-generic Stack implementation which I later
+ * got rid of (because I make an array of the Stacks).
  */
 
 import java.util.Scanner;
@@ -26,7 +29,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         BlockWorld world = new BlockWorld(in.nextInt());
-        
+
         while (readCommands(in, world))
             ;
     }

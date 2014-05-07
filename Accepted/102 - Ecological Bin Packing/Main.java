@@ -1,13 +1,14 @@
-import java.util.Scanner;
-
-/**
+/*
  * 102 - Ecological Bin Packing
  * 
  * Sort bottles into bins with minimum number of moves.
  * 
- * Small number of cases, just enumerate and pick the minimum.
- * 
+ * There is a small number of possible outcomes, so we can just simulate
+ * all of them and pick the minimum.
  */
+
+import java.util.Scanner;
+
 public class Main {
 
     static Scanner in = new Scanner(System.in);

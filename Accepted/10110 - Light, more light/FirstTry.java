@@ -5,9 +5,9 @@
  * to know if the number of divisors is even or odd without actually
  * calculating it.
  * 
- * I believe this one to work, although it doesn't work in
- * under the time limit. The idea is to do the prime factorization
- * and a little combinatorial work, which is explained below.
+ * I believe this one to work, although it doesn't stay below the time limit.
+ * The idea is to do the prime factorization some combinatorial work to get
+ * the number of factors without checking each one.
  * 
  */
 

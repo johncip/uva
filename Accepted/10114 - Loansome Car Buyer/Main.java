@@ -1,5 +1,10 @@
 /*
  * 10114 - Loansome Car Buyer
+ * 
+ * It suffices to do the simulation as described, but handling the first month
+ * can be tricky.
+ * 
+ * TODO: refactor monthsUntil
  */
 
 import java.util.Scanner;
@@ -64,8 +69,6 @@ class CarLoan {
 
         int idx = 0;
         int i = 0;
-        
-        // TODO: factor this garbage into one loop
         
         // off the lot
         carValue = depreciate(carValue, idx);

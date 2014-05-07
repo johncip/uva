@@ -1,5 +1,9 @@
 /*
  * 10082 - WERTYU
+ * 
+ * We know that the leftmost characters don't appear in the input, so there's
+ * no looping or special cases. Linear search for the value to map to is enough
+ * to pass the judge.
  */
 
 import java.util.Scanner;

@@ -1,5 +1,10 @@
 /*
  * 10038 - Jolly Jumpers
+ * 
+ * Here we store the gap's presence or absence in a boolean array, being
+ * careful not to exceed its bounds.
+ * 
+ * We could also store the actual gaps and sort them; this way is linear.
  */
 
 import java.util.Scanner;

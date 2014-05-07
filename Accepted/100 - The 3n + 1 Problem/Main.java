@@ -1,10 +1,7 @@
 /**
  * 100 - The 3n + 1 problem
  * 
- * For any two numbers i and j you are to determine
- * the maximum cycle length over all numbers between i and j.
- * 
- * Accepted on 2014-04-28
+ * Implement the algorithm as described.
  */
 
 import java.util.Scanner;

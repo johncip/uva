@@ -1,5 +1,12 @@
 /*
  * 10189 - Minesweeper
+ * 
+ * Store the "game state" as a grid, updating adjacent cells when
+ * a bomb is placed.
+ * 
+ * The number of adjacent bombs is always in the single digits, so we can use
+ * a char grid if we want (else we need a sentinel int for bombs and special
+ * print logic).
  */
 
 import java.util.Scanner;

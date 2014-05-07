@@ -21,6 +21,8 @@ In all cases I've tried to keep methods compact, obvious, and well-documented. H
 
 Often the problems allow you to make simplifying assumptions about the input, and I implicitly assume these as they're already stated in the problem description. Special assumptions I've tended to assert explicitly (as opposed to guarding against violations).
 
+On earlier solutions (actually my first 50 or so) I made the mistaken assumption that util.Arrays and the Containers were not allowed -- I don't know why I thought this. All of the problems in that difficulty class can be done with arrays and insertion sort, but the code would likely have been more elegant with some nice data structures to hide things behind.
+
 ### DACU
 "DACU" is a measure of problem difficulty used on [uHunt](http://uhunt.felix-halim.net). It is the number of distinct users with an accepted solution for a particular problem. I have mostly been solving the problems in order of DACU. Thus far they've mostly been "ad hoc" problems, with a couple featuring very simple examples of graph searching, state machines, or general recursion skills.
 

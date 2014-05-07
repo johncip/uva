@@ -3,7 +3,8 @@
  * 
  * Print the sum of distances from the median.
  * 
- * Problem is poorly worded -- Vito cannot live at any address, only an existing house.
+ * Problem is poorly worded -- Vito cannot live at any address, only an existing
+ * house.
  */
 
 import java.util.Scanner;

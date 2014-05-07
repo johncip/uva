@@ -1,9 +1,15 @@
 /*
  * 10696 - f91
  * 
- * Learned: DataInputStream is faster for reading ints (but deprecated).
- * Building a gigantic string is still faster than doing lots of separate I/O.
+ * A straightforward translation of f91 into iterative code (assuming I've
+ * done it correctly) doesn't pass the time limit. However, there is a simple 
+ * closed form.
+ *
+ * DataInputStream + parseInt is faster for reading ints than Scanner (but
+ * deprecated). Saving the output until the end is faster than separate
+ * console prints.
  * 
+ * Every second counts on this one.
  */
 
 import java.io.BufferedOutputStream;

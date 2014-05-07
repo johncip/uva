@@ -1,5 +1,8 @@
 /*
  * 10300 - Ecological Premium
+ * 
+ * The premium is the same regardless of the number of animals, so we don't
+ * have to do any division.
  */
 
 import java.util.Scanner;

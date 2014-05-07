@@ -9,7 +9,8 @@
  * insertion sort).
  *
  * Sorted data structures will probably do better (pair of heaps? BST?)
- * but sorting is fast enough to pass the judge.
+ * but sorting is fast enough to pass the judge. (At least with insertion
+ * sort, which has good performance on mostly sorted data).
  * 
  */
 

@@ -1,5 +1,7 @@
 /*
  * 11172 - Relational Operator
+ * 
+ * Easy.
  */
 
 import java.util.Scanner;

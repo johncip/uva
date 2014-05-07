@@ -43,8 +43,8 @@ class Box implements Comparable<Box> {
     /*
      * (non-Javadoc)
      * 
-     * Boxes are sorted lexicographically according to their respective elements
-     * (we are assuming elements have already been sorted).
+     * Boxes are sorted lexicographically according to their elements
+     * (we assume the elements have already been sorted).
      * 
      * @see java.lang.Comparable#compareTo(java.lang.Object)
      */

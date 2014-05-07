@@ -1,8 +1,16 @@
 /*
  * 113 - Power of Cryptography
  * 
+ * This first attempt was based on the idea that we could get away with
+ * using mod_pow to only check as many of the right-most digits as would fit
+ * into an int. My assumption was that this was enough to avoid most collisions
+ * and you could be reasonably sure you'd found the root.
  * 
- * Only leaving it here because I like the code.
+ * It's not, and the worst case is powers of 10, since you're only ever looking
+ * at a bunch of zeroes.
+ * 
+ * Still, I like the code, so that's something.
+ * 
  */
 
 import java.io.BufferedOutputStream;
@@ -17,8 +25,6 @@ public class ModAttempt {
 
     /**
      * Entry point.
-     * 
-     * @throws IOException
      */
     @SuppressWarnings("deprecation")
     public static void main(String[] args) throws IOException {

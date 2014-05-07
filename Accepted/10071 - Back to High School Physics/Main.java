@@ -1,5 +1,8 @@
 /*
  * 10071 - Back to High School Physics
+ * 
+ * If you can make sense of the problem description, the rest is
+ * straightforward.
  */
 
 import java.util.Scanner;

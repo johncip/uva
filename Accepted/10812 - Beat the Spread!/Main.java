@@ -1,16 +1,18 @@
 /*
  * 10812 - Beat the Spread!
  * 
- * A linear system (assume x >= y):
+ * Assuming x >= y:
  *   sum = x + y
  *   diff = x - y
  * 
- * So:
+ * And:
  *   sum + diff = 2x
  *   sum - diff = 2y
  * 
- * x and y are nonnegative ==> so sum > diff.
- * 2x can't be odd ==> sum + diff is even.
+ * x and y are nonnegative ==> sum > diff.
+ * 2x is even ==> sum + diff is even.
+ * 
+ * So x and y exist if those criteria are met.
  * 
  */
 

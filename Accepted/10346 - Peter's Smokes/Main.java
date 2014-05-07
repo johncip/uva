@@ -1,12 +1,11 @@
 /*
  * 10346 - Peter's Smokes
  * 
- * Divide n by k repeatedly until n < k.
- * k is always > 1.
+ * Divide n by k repeatedly until n < k. Remember to include the butts from the
+ * last round.
  * 
- * Have to remember to include the old butts.
- * 
- * There is probably a closed form but this passes the judge.
+ * There's also a nice closed form solution, but I didn't come up with it so
+ * I'm not including it here, but it's in the forums.
  */
 
 import java.util.Scanner;
@@ -26,10 +25,6 @@ public class Main {
     }
 
     static int sumSmokes(int n, int k) {
-        if (k <= 1)
-            throw new IllegalArgumentException();
-
-        // think of n as the number of butts
         int sum = n;
 
         while (n >= k) {

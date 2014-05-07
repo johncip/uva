@@ -1,5 +1,8 @@
 /*
  * 10370 - Above Average
+ * 
+ * Take the average, count the ones above it. We could avoid division by n if
+ * we were concerned about precision, but this is clearer and passes the judge.
  */
 
 import java.util.Scanner;

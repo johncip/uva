@@ -1,5 +1,9 @@
 /*
  * 10008 - What's Cryptanalysis?
+ * 
+ * Count the frequencies. A more Java-like solution would involve
+ * Comparable frequency objects, but trying to avoid the libraries I've
+ * instead created an array of int "pointers" and sorted those.
  */
 
 import java.io.BufferedOutputStream;

@@ -1,9 +1,8 @@
 /*
  * 10079 - Pizza Cutting
  * 
- * Trying a few cases, we see that the maximum number of slices is related to the
- * triangular numbers. Need long ints to store some of the outputs.
- * 
+ * Trying cases, we see that the maximum number of slices is related to the
+ * triangular numbers. Requires long ints.
  */
 
 import java.util.Scanner;

@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-public class Original {
+public class FirstTry {
 
     /**
      * For each x in stdin, print f91(x). Zero terminates.

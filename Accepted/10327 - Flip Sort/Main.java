@@ -1,7 +1,7 @@
 /*
  * 10327 - Flip Sort
  * 
- * Use insertion sort and count the swaps.
+ * "Flip sort" is insertion sort. Count the swaps.
  */
 
 import java.util.Scanner;

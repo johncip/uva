@@ -1,14 +1,11 @@
 /*
  * 10110 - Light, more light
  * 
- * This question has a really short solution as well as some tantalizing "fast"
- * solutions that take longer.
- * 
  * Divisors always occur in pairs (and thus the number of them is even), unless
- * there's an integer square root.
+ * the number's square root is an integer.
  * 
  * Note to self: for these number theory ones, with the brute force solution in
- * hand, look for patterns in the output over a large range of test cases before
+ * hand, look for patterns in the output over a large range of inputs before
  * continuing on.
  */
 

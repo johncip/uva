@@ -1,5 +1,7 @@
 /*
  * 10035 - Primary Arithmetic
+ * 
+ * Do the addition per digit count the carries.
  */
 import java.util.Scanner;
 

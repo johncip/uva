@@ -1,5 +1,7 @@
 /*
  * 10783 - Odd Sum
+ * 
+ * Probably a simple closed form, but this suffices.
  */
 
 import java.util.Scanner;
@@ -18,7 +20,6 @@ public class Main {
 
     /**
      * Returns the sum of the odd integers between and including a and b.
-     * Closed form seems simple, but then so is this...
      */
     private static int oddSum(int a, int b) {
         int sum = 0;
