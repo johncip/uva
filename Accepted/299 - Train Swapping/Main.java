@@ -1,5 +1,7 @@
 /*
  * 299 - Train Swapping
+ * 
+ * Train swapping is the same as insertion sort.
  */
 
 import java.util.Scanner;

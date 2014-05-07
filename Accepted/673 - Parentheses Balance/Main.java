@@ -1,7 +1,10 @@
 /*
  * 673 - Parentheses Balance
  * 
- * To submit: append Stack.java
+ * Use a stack.
+ * 
+ * Note: this solution uses an old stack implementation which has since been
+ * replaced.
  */
 
 import java.io.BufferedOutputStream;

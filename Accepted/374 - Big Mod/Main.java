@@ -7,12 +7,12 @@
  * So we can do the multiplication by hand and take mod after each step.
  * 
  * However, it is faster (and necessary to pass the judge) to square the base
- * repeatedly instead. Since m < sqrt(MAX INT), this will not overflow.
+ * repeatedly instead. Since m < sqrt(MAX INT), we know this will not overflow.
  * 
- * If p is odd then we should multiply once first and decrement it.
+ * (If p is odd then we should multiply once first to decrement it.)
  * 
- * We can probably use BigInteger.modPow as well.
- * 
+ * We can probably use BigInteger.modPow() as well. The implementation uses
+ * repeated squaring.
  */
 
 import java.io.BufferedOutputStream;

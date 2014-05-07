@@ -1,5 +1,9 @@
 /*
  * 579 - ClockHands
+ * 
+ * Remember that the hour hands move with the minute hands.
+ * 
+ * You have to subtract from 360 if the angle is > 180.
  */
 
 import java.io.BufferedOutputStream;

@@ -1,5 +1,7 @@
 /*
  * 11727 - Cost Cutting
+ * 
+ * Could sort, do a couple swaps, etc. I went with a decision tree.
  */
 
 import java.util.Scanner;

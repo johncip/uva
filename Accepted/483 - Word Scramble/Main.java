@@ -1,7 +1,10 @@
 /*
  * 483 - Word Scramble
  * 
- * To submit, append Stack<T>.
+ * A state machine with two states, word and nonword, with the word state
+ * putting characters onto a stack.
+ * 
+ * Requires Util/Stack.
  */
 
 import java.io.BufferedOutputStream;

@@ -1,5 +1,7 @@
 /*
  * 591 - Box of Bricks
+ * 
+ * The minimum number is half of the sum of deviations from the average height.
  */
 
 import java.util.Scanner;

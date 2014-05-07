@@ -1,5 +1,9 @@
 /**
- * 575 - Skew Binary
+ * 10004 - Bicoloring
+ * 
+ * Build the graph (I've used an adjacency list), try to color the nodes, when
+ * you see one you've already visited, check if it's color, if recolored, would
+ * be consistent with what it already has.
  */
 
 import java.io.IOException;

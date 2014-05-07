@@ -1,8 +1,8 @@
 /*
  * 445 - Marvelous Mazes
  * 
- * Similar to run-length encoding except multi-digit character runs need to be
- * added rather than treated as a number.
+ * Run-length encoding, but easier since multi-digit character are added rather
+ * than parsed as a single number.
  */
 
 import java.util.Scanner;

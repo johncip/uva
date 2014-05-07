@@ -1,5 +1,7 @@
 /*
  * 272 - TEX Quotes
+ * 
+ * Easy enough, just swap the quotes.
  */
 
 import java.util.Scanner;

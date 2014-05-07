@@ -1,5 +1,7 @@
 /*
  * 11799 - Horror Dash
+ * 
+ * Remember the largest number you read. No need to store anything else.
  */
 
 import java.util.Scanner;

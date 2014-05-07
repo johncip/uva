@@ -1,5 +1,7 @@
 /*
  * 11498 - Division of Nlogonia
+ * 
+ * Remember the absolute values.
  */
 
 import java.util.Scanner;

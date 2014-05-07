@@ -1,5 +1,7 @@
-/**
+/*
  * 424 - Integer Inquiry
+ * 
+ * They allow java.math.BigInteger; may as well use it.
  */
 
 import java.io.BufferedOutputStream;

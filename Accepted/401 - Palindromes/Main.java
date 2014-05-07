@@ -2,14 +2,13 @@
  * 401 - Palindromes
  * 
  * A string is a mirror string if it is equal to the same string with
- * characters reversed and substituted their "mirror images" as the
- * problem defines them.
+ * characters reversed and their "mirror images" substituted in.
  * 
  * A string is a mirrored palindrome if it meets the above criteria
  * and is also a palindrome.
  * 
  * Note that if a palindrome consists of only characters which have vertical
- * symmetry, it is a mirrored palindrome, but the converse isn't true.
+ * symmetry, then it is a mirrored palindrome, but the converse isn't true.
  */
 
 import java.util.Scanner;

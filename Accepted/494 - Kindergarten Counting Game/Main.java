@@ -1,5 +1,8 @@
 /*
- * 494 - Kindergarten Counting Game 
+ * 494 - Kindergarten Counting Game
+ * 
+ * Small state machine.
+ * 
  */
 import java.util.Scanner;
 

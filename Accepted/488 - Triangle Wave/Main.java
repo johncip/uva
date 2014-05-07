@@ -1,7 +1,8 @@
 /*
  * 488 - Triangle Wave
  * 
- * time to beat: 3.6
+ * Do it all with one StringBuilder; here referential transparency and time
+ * limits don't mix.
  */
 
 import java.io.BufferedOutputStream;

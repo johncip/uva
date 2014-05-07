@@ -1,5 +1,8 @@
 /*
  * 458 - The Decoder
+ * 
+ * Preserve the input's newline characters rather than ignoring them and
+ * creating new ones.
  */
 
 import java.io.DataInputStream;
