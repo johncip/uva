@@ -3,9 +3,7 @@ uva
 
 My solutions to ACM contest problems. I competed in my area's ACM regionals twice while I was an undergrad. I'd like to spend some time getting better at these problems since I think they're pretty fun.
 
-This is not the only repository of such solutions, nor is it the most complete. I'm doing these for myself. However, I've tried to keep the code organized and well-documented. If you are looking for a solution to a problem you haven't solved yet, I would advise you to look [here](http://uvatoolkit.com/problemssolve.php) or in the Online Judge forums first for a strategy hint rather than a full solution.
-
-Often a larger input/output set is enough. In my opinion the problems which force one to guess what to do with edge cases, or purposely introduce red herrings, are perhaps good puzzles but not good *programming challenges*. (Sure, the real world is full of ambiguity that engineers must deal with, but by their nature those cases lack a specific set of outputs that one must conform to.)
+This is not the only repository of such solutions, nor is it the most complete. I'm doing these for myself. However, I've tried to keep the code organized and well-documented. If you are looking for a solution to a problem you haven't solved yet, I would advise you to look [here](http://uvatoolkit.com/problemssolve.php) or in the Online Judge forums first for a strategy hint rather than a full solution. Often a larger input/output set is enough.
 
 ### I/O
 Most of the problems have a list of integers as input, and in Java, Scanner is the simplest way to read them. However, some problems require reading millions of inputs very quickly, and in those cases faster methods like DataInputStream.readLine() (deprecated) or BufferedReader.readLine() are required for staying under the time limit. Some of my solutions use DataInputStreams, and I haven't bothered to update those to BufferedReaders, but I expect the performance to be similar.
