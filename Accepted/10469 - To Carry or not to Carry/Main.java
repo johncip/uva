@@ -12,7 +12,7 @@ public class Main {
     /**
      * Entry point. For each input pair, print a ^ b.
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
         while (in.hasNextLong())
