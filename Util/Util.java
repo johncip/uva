@@ -142,4 +142,15 @@ class Util {
         
         return fibs[n];        
     }
+    
+    /**
+     * Writes a grid to stdout.
+     */
+    static void say(long[][] arr) {
+        for (int r = 0; r < arr.length; r++) {
+            for (int c = 0; c < arr[r].length; c++)
+                System.out.print(String.format("%6d", arr[r][c]));
+            System.out.println();
+        }
+    }
 }
