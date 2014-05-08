@@ -123,4 +123,23 @@ class Util {
         arr[i] = arr[j];
         arr[j] = tmp;
     }
+    
+    /**
+     * Returns the nth Fibonacci number.
+     */
+    public static long fib(int n) {
+        if (n == 0)
+            return 0;
+        
+        if (n == 1)
+            return 1;
+        
+        long[] fibs = new long[n + 1];
+        fibs[1] = 1;
+        
+        for (int i = 2; i < fibs.length; i++)
+            fibs[i] = fibs[i-1] + fibs[i-2];
+        
+        return fibs[n];        
+    }
 }
