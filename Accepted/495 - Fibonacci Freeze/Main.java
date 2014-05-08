@@ -1,5 +1,7 @@
 /*
  * 495 - Fibonacci Freeze
+ * 
+ * Compute fibs bottom-up. Use BigInteger.
  */
 
 import java.math.BigInteger;
