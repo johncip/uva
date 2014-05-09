@@ -25,7 +25,7 @@ public class Main {
     /**
      * Handles a case.
      */
-    private static int handleCase(int n) {
+    static int handleCase(int n) {
         return n;
     }
 

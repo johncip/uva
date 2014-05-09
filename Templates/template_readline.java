@@ -33,7 +33,7 @@ public class Main {
     /**
      * Handles a case.
      */
-    private static String handleCase(String line) {
+    static String handleCase(String line) {
         return line;
     }
 
