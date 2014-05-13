@@ -123,26 +123,26 @@ class Util {
         arr[i] = arr[j];
         arr[j] = tmp;
     }
-    
+
     /**
      * Returns the nth Fibonacci number.
      */
     public static long fib(int n) {
         if (n == 0)
             return 0;
-        
+
         if (n == 1)
             return 1;
-        
+
         long[] fibs = new long[n + 1];
         fibs[1] = 1;
-        
+
         for (int i = 2; i < fibs.length; i++)
-            fibs[i] = fibs[i-1] + fibs[i-2];
-        
-        return fibs[n];        
+            fibs[i] = fibs[i - 1] + fibs[i - 2];
+
+        return fibs[n];
     }
-    
+
     /**
      * Writes a grid to stdout.
      */
@@ -150,6 +150,26 @@ class Util {
         for (int r = 0; r < arr.length; r++) {
             for (int c = 0; c < arr[r].length; c++)
                 System.out.print(String.format("%6d", arr[r][c]));
+            System.out.println();
+        }
+    }
+
+    /**
+     * Writes a grid to stdout with given spacing. Prints a dot in place of the
+     * "background" value.
+     */
+    static void say(int[][] arr, int n, int background) {
+        String fmt = "%" + n + "d";
+        String blank = "%" + n + "s";
+
+        for (int r = 0; r < arr.length; r++) {
+            for (int c = 0; c < arr[r].length; c++) {
+                int v = arr[r][c];
+                if (v == background)
+                    System.out.format(blank, ".");
+                else
+                    System.out.format(fmt, arr[r][c]);
+            }
             System.out.println();
         }
     }
