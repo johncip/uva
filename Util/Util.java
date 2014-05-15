@@ -1,9 +1,16 @@
-import java.math.BigInteger;
-
 class Util {
 
     /**
-     * Insertion sort.
+     * Insertion sort for integer array.
+     */
+    public static void sort(int[] arr) {
+        for (int i = 0; i < arr.length; i++)
+            for (int j = i; j > 0 && arr[j] <  arr[j - 1]; j -= 1)
+                swap(arr, j, j - 1);
+    }
+    
+    /**
+     * Insertion sort for Comparable array.
      */
     @SuppressWarnings("rawtypes")
     public static void sort(Comparable[] arr) {
@@ -175,18 +182,52 @@ class Util {
             System.out.println();
         }
     }
-    
+
     /**
-     * Returns an array of n Fibonacci numbers.
+     * Returns an integer array of n Fibonacci numbers.
      */
-    static BigInteger[] fibs(int n) {
-        BigInteger[] fibs = new BigInteger[n];
-        fibs[0] = BigInteger.ZERO;
-        fibs[1] = BigInteger.ONE;
+    static int[] fibs2(int n) {
+        if (n > 46)
+            throw new IllegalArgumentException();
+
+        int[] fibs = new int[n];
+        fibs[1] = 1;
 
         for (int i = 2; i < fibs.length; i++)
-            fibs[i] = fibs[i - 1].add(fibs[i - 2]);
+            fibs[i] = fibs[i - 1] + (fibs[i - 2]);
 
         return fibs;
+    }
+
+    /*
+     * Binary searches a sorted array of integers. If the key is found, returns
+     * its index, or -1 if key is not in the array.
+     */
+    static int binSearch(int key, int[] arr) {
+        int lo = 0;
+        int hi = arr.length;
+
+        while (lo <= hi) {
+            int mid = lo + (hi - lo) / 2;
+
+            if (arr[mid] < key)
+                lo = mid + 1;
+            else if (arr[mid] > key)
+                hi = mid - 1;
+            else
+                return mid;
+        }
+
+        return -1;
+    }
+    
+    /**
+     * Returns a sorted copy of the array.
+     */
+    public static int[] sortedCopy(int[] arr) {
+        int[] sorted = new int[arr.length];
+        System.arraycopy(arr, 0, sorted, 0, arr.length);
+        sort(sorted);
+        return sorted;
     }
 }
